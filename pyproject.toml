@@ -1,0 +1,24 @@
+[project]
+name = "crypto-bots"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nithin Chalapathi", email = "nithin.ch10@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "cython>=3.0.11",
+    "ipython>=8.18.1",
+    "numpy>=2.0.2",
+    "objgraph>=3.6.2",
+    "pydantic <= 1.18.0",
+    "setuptools>=75.6.0",
+]
+
+[project.scripts]
+crypto-bots = "crypto_bots:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
